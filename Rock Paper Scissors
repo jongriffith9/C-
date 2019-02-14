@@ -1,0 +1,109 @@
+//This is the game of Rock Paper Scissors
+#include <iostream>
+#include <stdlib.h>
+
+int main() {
+srand (time(NULL));
+
+int computer = rand() % 3 + 1;
+
+int user = 0;
+
+std::cout << "====================\n";
+std::cout << "rock paper scissors!\n";
+std::cout << "====================\n";
+
+std::cout << "1) ✊\n";
+std::cout << "2) ✋\n";
+std::cout << "3) ✌️\n";
+
+std::cout << "shoot! ";
+  
+std::cin >> user;
+  
+//User Choices
+if (user == 1) {
+  std::cout << "You Choose ✊ \n";
+}
+  
+else if (user == 2) {
+  std::cout << "You Choose ✋ \n";
+}
+  
+else {
+  std::cout << "You Choose ✌️ \n";
+}
+  
+//Computers Choices
+  
+  if (computer == 1) {
+  std::cout << "CPU Choose ✊ \n";
+}
+  
+else if (computer == 2) {
+  std::cout << "CPU Choose ✋ \n";
+}
+  
+else {
+  std::cout << "CPU Choose ✌️ \n";
+}
+
+if (user == computer) {
+    
+    std::cout << "it's a tie!\n";
+    
+}
+//User Chooses Rock
+  
+else if (user == 1) {
+    
+    if (computer == 2) {
+      
+      std::cout << "you lost! booooo get off the stage!\n";
+      
+    }
+    if (computer == 3) {
+      
+      std::cout << "you won! woohoo, gimmie dat money!\n";
+      
+    }
+    
+  }
+  
+  // user paper
+  
+  else if (user == 2) {
+    
+    if (computer == 1) {
+      
+      std::cout << "you won! woohoo you're amazing!\n";
+      
+    }
+    if (computer == 3) {
+      
+      std::cout << "you lost! go home, failure!\n";
+      
+    }
+    
+  }
+  
+  // user scissors
+  
+  else if (user == 3) {
+    
+    if (computer == 1) {
+      
+      std::cout << "you won! Awesome!\n";
+      
+    }
+    if (computer == 2) {
+      
+      std::cout << "you lost! booooo you suck!\n";
+      
+    }
+    
+  }
+  
+  return 0;
+}
+
