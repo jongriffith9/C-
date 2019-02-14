@@ -1,0 +1,15 @@
+// My Initials are JG
+#include <iostream>
+
+int main() {
+
+  // Your program lives here:
+  std::cout << "JJJJJJ  GGG  \n";
+  std::cout << "   J   G   G \n";
+  std::cout << "   J   G     \n";
+  std::cout << "   J   GGGGG \n";
+  std::cout << "J  J   G   G \n";
+  std::cout << "J  J   G   G \n";
+  std::cout << " JJJ    GGG  \n";
+  
+}
